@@ -22,9 +22,13 @@
             </div>
             <h1 class="text-white text-4xl"><%= user.name %></h1>
             <h1 class="text-white text-2xl"><%= user.email %></h1>
-            <button class="bg-red-500 mt-6 w-50 text-white p-2 rounded-lg">
+           <div class="flex gap-4">
+             <button class="bg-white  mt-6 w-50 text-black p-2 rounded-lg">
+              <a href="/edit/<%= user._id %>">Edit User</a>
+            </button><button class="bg-red-500 mt-6 w-50 text-white p-2 rounded-lg">
               <a href="/delete/<%= user._id %>">Delete User</a>
             </button>
+          </div>
           </div>
         <% }) %>
       <% } %>
